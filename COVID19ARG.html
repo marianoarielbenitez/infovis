@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+  <h1> COVID19 ARGENTINA </h1>
+  
+<div id="observablehq-1274f27e"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@marianoarielbenitez/covid-19-our-world-in-data.js?v=3";
+const inspect = Inspector.into("#observablehq-1274f27e");
+(new Runtime).module(define, name => name === "viewof linechart" ? inspect() : undefined);
+</script>
+
+  <div id="observablehq-6a536414"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@marianoarielbenitez/covid-19-our-world-in-data.js?v=3";
+const inspect = Inspector.into("#observablehq-6a536414");
+(new Runtime).module(define, name => name === "viewof heatmap" ? inspect() : undefined);
+</script>
+ 
+  
+</body>
+</html>
